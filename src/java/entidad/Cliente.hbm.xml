@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-11-2016 12:31:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entidad.Cliente" table="cliente" catalog="dbtopicos" optimistic-lock="version">
+        <id name="idcliente" type="java.lang.Integer">
+            <column name="idcliente" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" not-null="true" />
+        </property>
+        <property name="ci" type="string">
+            <column name="ci" length="20" not-null="true" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="50" not-null="true" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="50" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="12" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
